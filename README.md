@@ -1,4 +1,4 @@
-﻿# W9：[组合输出](https://github.com/OS-Q/W9)
+﻿# W9：[其他输出](https://github.com/OS-Q/W9)
 
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 
@@ -8,7 +8,7 @@
 
 ## [平台描述](https://github.com/OS-Q/W9/wiki) 
 
-W9组合输出平台，用于对用户显示和呈现信息
+W9其他输出平台，用于收集整理各种小类输出
 
 ### [共用资源](https://github.com/OS-Q/W9/wiki) 
 
@@ -22,31 +22,31 @@ W9组合输出平台，用于对用户显示和呈现信息
 
 ## [包含设备](https://github.com/OS-Q/W9/wiki) 
 
-#### D50：[NULL](https://github.com/OS-Q/D50)
+#### D57：[语音输出](https://github.com/OS-Q/D57)
+
+用于输出语音信息
+
+#### D58：[模拟键盘](https://github.com/OS-Q/D58)
+
+用于模拟键盘外设
+
+#### D59：[模拟鼠标](https://github.com/OS-Q/D59)
+
+用于模拟鼠标外设
+
+#### D60：[NULL](https://github.com/OS-Q/D60)
 
 
 
-#### D51：[NULL](https://github.com/OS-Q/D51)
+#### D61：[NULL](https://github.com/OS-Q/D61)
 
 
 
-#### D52：[NULL](https://github.com/OS-Q/D52)
+#### D62：[NULL](https://github.com/OS-Q/D62)
 
 
 
-#### D53：[NULL](https://github.com/OS-Q/D53)
-
-
-
-#### D54：[NULL](https://github.com/OS-Q/D54)
-
-
-
-#### D55：[NULL](https://github.com/OS-Q/D55)
-
-
-
-#### D56：[NULL](https://github.com/OS-Q/D56)
+#### D63：[NULL](https://github.com/OS-Q/D63)
 
 
 
@@ -64,19 +64,17 @@ W9组合输出平台，用于对用户显示和呈现信息
 
 连接显示设备，驱动显示相关信息
 
-#### W8：[文件输出](https://github.com/OS-Q/W8)
+#### W8：[空间输出](https://github.com/OS-Q/W8)
 
-具有时间或条件控制的数据流输出
+通过驱动装置实现空间位置输出
 
-#### -> W9：[组合输出](https://github.com/OS-Q/W9)
+#### -> W9：[其他输出](https://github.com/OS-Q/W9)
 
-具有多种输出方式，各种组合控制
+其他的内容输出
 
 
 ---
 
-####  © qitas@qitas.cn
+###   © qitas@qitas.cn
 ###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2018-12-11
-
----
+####  @ 2018-12-21
