@@ -9,6 +9,10 @@
 
 [Arduino STM32F1](https://github.com/OS-Q/H3)
 
+打开Arduino IDE然后按工具-开发板管理器，下载安装Arduino SAM开发板，不安装这个开发板后编译会出现arm-none-eabi-g++错误
+
+下载后解压，将文件夹重命名为Arduino_STM32后复制到C:\Users\用户名\Documents\Arduino\hardware文件夹，如果没有hardware文件夹就新建一个
+
 ### [核心资源](https://github.com/OS-Q/H3)
 
 * [文档](docs/)
