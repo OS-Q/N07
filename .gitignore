@@ -1,0 +1,6 @@
+.DS_store
+*.o
+*.bak
+*.1
+platform.local.txt
+boards.local.txt
