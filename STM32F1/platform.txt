@@ -1,4 +1,4 @@
-name=STM32F1 Boards
+name=STM32F1
 version=0.1.0
 
 compiler.warning_flags=-w -DDEBUG_LEVEL=DEBUG_NONE
