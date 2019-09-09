@@ -98,13 +98,12 @@ public:
      * Request bytes from a slave device and process the request,
      * storing into the receiving buffer.
      */
-    uint8 requestFrom(uint8, int,bool stop=false);
+    uint8 requestFrom(uint8, int);
 
     /*
      * Allow only 8 bit addresses to be used when requesting bytes
      */
-    uint8 requestFrom(int address, int numBytes, bool stop=true);
-	
+    uint8 requestFrom(int, int);
 
     /*
      * Stack up bytes to be sent when transmitting
