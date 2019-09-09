@@ -33,7 +33,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 mcu = env.BoardConfig().get("build.mcu", "")
 
-FRAMEWORK_ROOT = platform.get_package_dir("framework-arduinoststm32-maple")
+FRAMEWORK_ROOT = platform.get_package_dir("framework-stm32maple")
 
 if mcu.startswith("stm32f1"):
     FRAMEWORK_DIR = join(FRAMEWORK_ROOT, "STM32F1")

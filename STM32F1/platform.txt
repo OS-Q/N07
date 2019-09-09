@@ -1,10 +1,5 @@
-# 
-#
-# For more info:
-# https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
-
-name=STM32F1 Boards (STM32duino.com)
-version=0.1.2
+name=STM32F1
+version=1.0.0
 
 compiler.warning_flags=-w -DDEBUG_LEVEL=DEBUG_NONE
 compiler.warning_flags.none=-w -DDEBUG_LEVEL=DEBUG_NONE
