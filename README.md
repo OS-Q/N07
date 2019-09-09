@@ -1,4 +1,4 @@
-﻿# [Arduino STM32F1](https://github.com/OS-Q/N3)
+﻿# [Framework N3](https://github.com/OS-Q/N3)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
 
@@ -6,7 +6,7 @@
 
 ### [核心描述](https://github.com/OS-Q/N3/wiki) 
 
-[Arduino STM32F1](https://github.com/OS-Q/N3) 用于支持STM32F1系列平台运行arduino程序
+[Framework N3](https://github.com/OS-Q/N3) 用于支持STM32系列平台运行arduino程序
 
 ```
 打开Arduino IDE然后按工具-开发板管理器，下载安装Arduino SAM开发板，不安装这个开发板后编译会出现arm-none-eabi-g++错误；
@@ -17,10 +17,7 @@
 ### [关联资源](https://github.com/OS-Q/)
 
  *  [ Platform : STM32](https://github.com/OS-Q/H1) 
-*   [Framework：N1](https://github.com/OS-Q/N1)
-*   [Framework：N2](https://github.com/OS-Q/N2)
- *  [控制体系： M1](https://github.com/OS-Q/M1) 
-
+ *  [ M1](https://github.com/OS-Q/M1) 
 
 ### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/N3)
 ####  2019-9-4
