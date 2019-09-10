@@ -4,9 +4,11 @@
 
 [EDGE-Q](https://github.com/OS-Q/EDGE-Q) -> Q[4] -> M[12] -> W[52] -> D[365] -> H[24] -> N[60] -> S[60]
 
-### [核心描述](https://github.com/OS-Q/N3/wiki) 
+### [Framework描述](https://github.com/OS-Q/N3/wiki) 
 
-[Framework N3](https://github.com/OS-Q/N3) 用于支持STM32系列平台运行arduino程序
+[Framework N3](https://github.com/OS-Q/N3) 用于支持[ Platform : H1](https://github.com/OS-Q/H1) 平台运行arduino
+
+#### arduino图形界面使用：
 
 ```
 打开Arduino IDE然后按工具-开发板管理器，下载安装Arduino SAM开发板，不安装这个开发板后编译会出现arm-none-eabi-g++错误；
@@ -16,8 +18,7 @@
 
 ### [关联资源](https://github.com/OS-Q/)
 
- *  [ Platform : STM32](https://github.com/OS-Q/H1) 
- *  [ M1](https://github.com/OS-Q/M1) 
+*  [ Platform : H1](https://github.com/OS-Q/H1) 
 
 ### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/N3)
 ####  2019-9-4

@@ -8,7 +8,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 mcu = env.BoardConfig().get("build.mcu", "")
 
-FRAMEWORK_ROOT = platform.get_package_dir("framework-stm32maple")
+FRAMEWORK_ROOT = platform.get_package_dir("framework-N3")
 
 if mcu.startswith("stm32f1"):
     FRAMEWORK_DIR = join(FRAMEWORK_ROOT, "STM32F1")
@@ -27,7 +27,6 @@ VARIANT_REMAP = {
     "bluepill_f103c8_128k": "generic_stm32f103c",
     "maple_mini_b20": "maple_mini",
     "maple_mini_origin": "maple_mini",
-    "microduino32_flash": "microduino",
     "genericSTM32F103C8": "generic_stm32f103c",
     "genericSTM32F103CB": "generic_stm32f103c",
     "genericSTM32F103R8": "generic_stm32f103r8",
@@ -42,8 +41,7 @@ VARIANT_REMAP = {
     "genericSTM32F103VE": "generic_stm32f103v",
     "genericSTM32F103ZC": "generic_stm32f103z",
     "genericSTM32F103ZD": "generic_stm32f103z",
-    "genericSTM32F103ZE": "generic_stm32f103z",
-    "disco_f100rb": "STM32VLD"
+    "genericSTM32F103ZE": "generic_stm32f103z"
 }
 
 

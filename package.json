@@ -1,6 +1,6 @@
 {
-    "description":"Arduino Wiring-based Framework (STM32 Core)",
-    "name":"framework-stm32maple",
+    "description":"Framework N3 with Arduino maple (STM32 Core)",
+    "name":"framework-N3",
     "url":"https://github.com/rogerclarkmelbourne/Arduino_STM32",
     "version":"1.0.0"
 }
