@@ -1,3 +1,17 @@
+# Copyright 2014-present PlatformIO <contact@platformio.org>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 """
 Arduino
 
@@ -19,7 +33,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 mcu = env.BoardConfig().get("build.mcu", "")
 
-FRAMEWORK_ROOT = platform.get_package_dir("framework-N3")
+FRAMEWORK_ROOT = platform.get_package_dir("framework-N07")
 
 if mcu.startswith("stm32f1"):
     FRAMEWORK_DIR = join(FRAMEWORK_ROOT, "STM32F1")
@@ -35,7 +49,9 @@ assert isdir(FRAMEWORK_DIR)
 VARIANT_REMAP = {
     "disco_f407vg": "discovery_f407",
     "genericSTM32F407VET6": "generic_f407v",
-    "genericSTM32F407VGT6": "generic_f407v"
+    "genericSTM32F407VGT6": "generic_f407v",
+    "stm32f4stamp": "discovery_f407",
+    "netduino2plus": "discovery_f407"
 }
 
 
@@ -65,8 +81,11 @@ def process_usb_configuration(cpp_defines):
         env.Append(CPPDEFINES=["USB_NC"])
 
 
-def configure_application_offset(upload_protocol):
+def configure_application_offset(board_name, upload_protocol):
     addr = "0x08000000"
+    # Handle board without bootloader
+    if not board_name.startswith("generic"):
+        return addr
     if upload_protocol in ("dfu", "hid"):
         addr = "0x08004000"
     if upload_protocol == "hid":
@@ -74,11 +93,11 @@ def configure_application_offset(upload_protocol):
     env.Append(CPPDEFINES=[("USER_ADDR_ROM", '"(uint32)%s"' % addr)])
 
 
-def get_linker_script(upload_protocol):
-    if upload_protocol in ("dfu", "hid"):
+def get_linker_script(board_name, upload_protocol):
+    # Only generic board has custom offset
+    if board_name.startswith("generic") and upload_protocol in ("dfu", "hid"):
         return "bootloader_8004000.ld"
-    else:
-        return "jtag.ld"
+    return "jtag.ld"
 
 
 def configure_error_led(board):
@@ -166,14 +185,14 @@ env.Append(
     ]
 )
 
-ldscript = get_linker_script(upload_protocol)
+ldscript = get_linker_script(board_name, upload_protocol)
 env.Replace(LDSCRIPT_PATH=ldscript)
 
 if not isfile(join(FRAMEWORK_DIR, "variants", variant, "ld", ldscript)):
     print("Warning! Cannot find linker script for the current target!\n")
 
 configure_error_led(board_name)
-configure_application_offset(upload_protocol)
+configure_application_offset(board_name, upload_protocol)
 
 cpp_defines = env.Flatten(env.get("CPPDEFINES", []))
 process_optimization_level(cpp_defines)

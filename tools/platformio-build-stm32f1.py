@@ -1,3 +1,27 @@
+# Copyright 2014-present PlatformIO <contact@platformio.org>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+"""
+Arduino
+
+Arduino Wiring-based Framework allows writing cross-platform software to
+control devices attached to a wide range of Arduino boards to create all
+kinds of creative coding, interactive objects, spaces or physical experiences.
+
+https://github.com/rogerclarkmelbourne/Arduino_STM32
+"""
+
 import sys
 from os.path import isdir, isfile, join
 
@@ -8,7 +32,7 @@ platform = env.PioPlatform()
 board = env.BoardConfig()
 mcu = env.BoardConfig().get("build.mcu", "")
 
-FRAMEWORK_ROOT = platform.get_package_dir("framework-N3")
+FRAMEWORK_ROOT = platform.get_package_dir("framework-N07")
 
 if mcu.startswith("stm32f1"):
     FRAMEWORK_DIR = join(FRAMEWORK_ROOT, "STM32F1")
@@ -27,6 +51,7 @@ VARIANT_REMAP = {
     "bluepill_f103c8_128k": "generic_stm32f103c",
     "maple_mini_b20": "maple_mini",
     "maple_mini_origin": "maple_mini",
+    "microduino32_flash": "microduino",
     "genericSTM32F103C8": "generic_stm32f103c",
     "genericSTM32F103CB": "generic_stm32f103c",
     "genericSTM32F103R8": "generic_stm32f103r8",
@@ -41,7 +66,8 @@ VARIANT_REMAP = {
     "genericSTM32F103VE": "generic_stm32f103v",
     "genericSTM32F103ZC": "generic_stm32f103z",
     "genericSTM32F103ZD": "generic_stm32f103z",
-    "genericSTM32F103ZE": "generic_stm32f103z"
+    "genericSTM32F103ZE": "generic_stm32f103z",
+    "disco_f100rb": "STM32VLD"
 }
 
 
