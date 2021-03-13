@@ -1,13 +1,16 @@
-﻿# [Framework N07](https://github.com/OS-Q/N07)
+﻿# [P18](https://github.com/OS-Q/P18)
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-#### 关于系统架构：[OS-Q](https://github.com/OS-Q)
-#### 归属边缘体系：[EDGE-Q](https://github.com/EDGE-Q)
+[![Build Status](https://github.com/OS-Q/P18/workflows/macos/badge.svg)](https://github.com/OS-Q/P18/actions/workflows/macos.yml)
+[![Build Status](https://github.com/OS-Q/P18/workflows/ubuntu/badge.svg)](https://github.com/OS-Q/P18/actions/workflows/ubuntu.yml)
+[![Build Status](https://github.com/OS-Q/P18/workflows/windows/badge.svg)](https://github.com/OS-Q/P18/actions/workflows/windows.yml)
+[![Build Status](https://github.com/OS-Q/P18/workflows/PlatformIO/badge.svg)](https://github.com/OS-Q/P18/actions/workflows/platformio.yml)
+[![Build Status](https://travis-ci.com/OS-Q/P18.svg?branch=master)](https://travis-ci.com/OS-Q/P18)
+[![Build status](https://ci.appveyor.com/api/projects/status/2k7vnde38o142o0u?svg=true)](https://ci.appveyor.com/project/Qitas/P18)
 
-### [Framework 描述](https://github.com/OS-Q/N07/wiki) 
+### [简介](https://github.com/OS-Q/P18/wiki)
 
-[Framework N07](https://github.com/OS-Q/N07) 基于PlatformIO平台，应用 [STM32 Maple](https://github.com/rogerclarkmelbourne/Arduino_STM32)框架
+[P18](https://github.com/OS-Q/P18)
 
-### [OS-Q = Open Solutions | Open Source |  Operating System ](http://www.OS-Q.com/N07)
-####  2019-11-12
+### [源圈 OS-Q (Open Source & QA) ](http://www.OS-Q.com)
