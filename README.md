@@ -2,9 +2,9 @@
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-[![Build Status](https://github.com/OS-Q/T13A/workflows/macos/badge.svg)](https://github.com/OS-Q/T13A/actions/workflows/macos.yml)
-[![Build Status](https://github.com/OS-Q/T13A/workflows/ubuntu/badge.svg)](https://github.com/OS-Q/T13A/actions/workflows/ubuntu.yml)
-[![Build Status](https://github.com/OS-Q/T13A/workflows/windows/badge.svg)](https://github.com/OS-Q/T13A/actions/workflows/windows.yml)
+[![Build Status](https://github.com/OS-Q/T13A/workflows/SDCC_default/badge.svg)](https://github.com/OS-Q/T13A/actions)
+[![Build Status](https://github.com/OS-Q/T13A/workflows/SDCC_4.0.0/badge.svg)](https://github.com/OS-Q/T13A/actions)
+[![Build Status](https://github.com/OS-Q/T13A/workflows/SDCC_4.1.0/badge.svg)](https://github.com/OS-Q/T13A/actions)
 
 
 ### [简介](https://github.com/OS-Q/T13A/wiki)

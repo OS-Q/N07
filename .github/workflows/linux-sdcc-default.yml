@@ -1,0 +1,31 @@
+name: SDCC_default
+
+on:
+  push:
+    branches:
+      - master
+      - github_actions
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - master
+      - github_actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out
+      uses: actions/checkout@v2
+      with:
+        submodules: "recursive"
+
+    - name: Install SDCC
+      run: sudo apt-get install -y sdcc
+
+    - name: Build
+      run: make
+      working-directory: src
+
