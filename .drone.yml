@@ -7,5 +7,5 @@ steps:
   commands:
   - sudo apt update
   - sudo apt install -y sdcc build-essential git
-  - git submodule update --init
-  - make -C serial
+  - git clone --depth=1 --recursive https://github.com/OS-Q/T13A.git
+  - make -C T13A/serial
