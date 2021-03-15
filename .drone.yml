@@ -3,6 +3,9 @@ name: default
 
 steps:
 - name: test
-  image: rfocosi/sdcc-toolchain
+  image: ubuntu
   commands:
+  - sudo apt update
+  - sudo apt install -y sdcc build-essential git
+  - git submodule update --init
   - make -C serial
