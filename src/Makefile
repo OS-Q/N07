@@ -16,7 +16,7 @@ EXTRA_FLAGS = --opt-code-speed
 
 C_FILES = \
 	main.c \
-	../ch554_sdcc/include/debug.c
+	../E13A/include/debug.c
 
-include ../ch554_sdcc/examples/Makefile.include
+include ../E13A/examples/Makefile.include
 
