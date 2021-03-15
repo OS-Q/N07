@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: rfocosi/sdcc-toolchain
+  commands:
+  - make -C serial
