@@ -18,18 +18,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        python-version: [3.7]
         project:
           - "esp"
           - "jtag"
           - "serial"
 
-      steps:
-      - name: Check out
-        uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
         with:
           submodules: "recursive"
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
 
-      - name: Download SDCC
+      - name: Install
         run: |
           wget https://sourceforge.net/projects/sdcc/files/sdcc-linux-amd64/4.0.0/sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
           tar -xf sdcc-4.0.0-amd64-unknown-linux2.5.tar.bz2
