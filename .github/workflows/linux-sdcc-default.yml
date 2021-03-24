@@ -1,4 +1,4 @@
-name: SDCC_default
+name: default
 
 on:
   push:
@@ -15,17 +15,31 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.7]
+        project:
+          - "esp"
+          - "jtag"
+          - "serial"
 
     steps:
-    - name: Check out
-      uses: actions/checkout@v2
-      with:
-        submodules: "recursive"
+      - uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
 
-    - name: Install SDCC
-      run: sudo apt-get install -y sdcc
+      - name: Install SDCC
+        run: sudo apt-get install -y sdcc
 
-    - name: Build
-      run: make
-      working-directory: esp
+      - name: Build
+        run: |
+          make -C ${{ matrix.project }}
+          cp ${{ matrix.project }}/*.hex build/
+
+      - name: Upload
+        uses: actions/upload-artifact@v1.0.0
+        with:
+          name: Firmware_default
+          path: build/
 

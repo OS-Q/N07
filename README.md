@@ -2,7 +2,7 @@
 
 [![sites](http://182.61.61.133/link/resources/OSQ.png)](http://www.OS-Q.com)
 
-[![Build Status](https://github.com/OS-Q/T13A/workflows/SDCC_default/badge.svg)](https://github.com/OS-Q/T13A/actions)
+[![Build Status](https://github.com/OS-Q/T13A/workflows/default/badge.svg)](https://github.com/OS-Q/T13A/actions)
 [![Build Status](https://github.com/OS-Q/T13A/workflows/SDCC_4.0.0/badge.svg)](https://github.com/OS-Q/T13A/actions)
 [![Build Status](https://github.com/OS-Q/T13A/workflows/latest/badge.svg)](https://github.com/OS-Q/T13A/actions)
 [![Build Status](http://182.61.61.133/api/badges/OS-Q/T13A/status.svg)](http://182.61.61.133/OS-Q/T13A)

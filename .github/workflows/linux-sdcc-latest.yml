@@ -38,7 +38,7 @@ jobs:
       - name: Build
         run: |
           make -C ${{ matrix.project }}
-          cp ${{ matrix.project }}/*.hex ../build
+          cp ${{ matrix.project }}/*.hex build/
 
       - name: Upload
         uses: actions/upload-artifact@v1.0.0
